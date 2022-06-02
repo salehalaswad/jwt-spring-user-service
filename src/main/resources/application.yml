@@ -1,0 +1,21 @@
+server:
+  port: 8079
+  error:
+    include-message: always
+    include-binding-erors: always
+
+spring:
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/user_service?user=root
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+    show-sql: true

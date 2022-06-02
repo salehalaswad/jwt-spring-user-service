@@ -14,7 +14,7 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AppUser {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
     private String name;
     private String username;
